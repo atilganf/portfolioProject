@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006680+1,ff00ee+100,7db9e8+100 */
+  background: #006680;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#006680", endColorstr="#7db9e8",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+body aside {
+  display: grid;
+  grid-template-columns: auto 40px;
+  padding: 1.5em;
+}
+body aside figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+body aside figure .avatar {
+  display: none;
+}
+body aside figure figcaption {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: white;
+}
+body aside #navbtn {
+  width: 40px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  padding: 0;
+  outline: 0;
+}
+body aside nav {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  top: 4.75em;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  transition: 0.4s;
+  z-index: 5;
+}
+body aside nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: white;
+}
+body aside nav ul li {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid lightgrey;
+}
+body aside nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 7%;
+  font-weight: 500;
+  display: block;
+  color: black;
+  cursor: pointer;
+}
+body aside nav ul :last-child a {
+  border-bottom: 1px solid lightgrey;
+}
+body main {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 8%;
+  margin: 0;
+  height: 85%;
+}
+body main h1 {
+  padding: 0;
+  margin: 0;
+  margin: 1em 0 1em 0;
+  font-size: 36px;
+}
+body main p {
+  font-size: 24px;
+  color: #5B5B5B;
+  line-height: 1.5em;
+}
+body main .cntc {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 900;
+  padding: 5%;
+  background-color: #1A76FF;
+  display: inline-block;
+  margin-top: 10%;
+  border-radius: 0.4em;
+}
+
+/*# sourceMappingURL=main.css.map */
