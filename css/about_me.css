@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  font-size: 2vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006680+1,ff00ee+100,7db9e8+100 */
+  background: #006680;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#006680", endColorstr="#7db9e8",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+body aside {
+  display: grid;
+  grid-template-columns: auto 40px;
+  padding: 1.5em 2em;
+}
+body aside figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+body aside figure .avatar {
+  display: none;
+}
+body aside figure figcaption {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+}
+body aside #navbtn {
+  width: auto;
+  height: auto;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  outline: 0;
+}
+body aside #navbtn img {
+  width: 2.8em;
+}
+body aside nav {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  top: 4.798em;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  transition: 0.4s;
+  z-index: 5;
+}
+body aside nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: white;
+}
+body aside nav ul li {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid lightgrey;
+}
+body aside nav ul li a {
+  text-decoration: none;
+  font-size: 1.4em;
+  padding: 1em;
+  font-weight: 500;
+  display: block;
+  color: black;
+  cursor: pointer;
+}
+body aside nav ul :last-child a {
+  border-bottom: 1px solid lightgrey;
+}
+@media screen and (min-width: 800px) {
+  body {
+    height: calc(100% - 5em);
+    font-size: 1.4vw;
+    margin: 2.5em;
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+  body aside {
+    padding: 0;
+    display: block;
+    background-color: #dad6ff;
+  }
+  body aside figure {
+    text-align: center;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 2em 0 2em 0;
+  }
+  body aside figure .avatar {
+    display: block;
+  }
+  body aside figure .avatar img {
+    height: 3.5em;
+  }
+  body aside figure figcaption {
+    color: black;
+    font-size: 1em;
+  }
+  body aside button {
+    display: none;
+  }
+  body aside nav {
+    margin: 0;
+    position: static;
+    width: 100%;
+    height: auto !important;
+    display: block;
+    background-color: #efefef;
+  }
+  body aside nav ul {
+    background-color: inherit;
+  }
+  body aside nav ul li {
+    text-align: left;
+    border: none;
+  }
+  body aside nav ul li a {
+    background-color: inherit;
+    font-size: 0.8em;
+    padding-left: 2em;
+  }
+  body aside nav ul li a:hover {
+    background-color: #1a76ff;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+/*# sourceMappingURL=about_me.css.map */
