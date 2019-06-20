@@ -10,19 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006680+1,ff00ee+100,7db9e8+100 */
-  background: #006680; /* Old browsers */
-  background: -moz-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    45deg,
-    #006680 1%,
-    #ff00ee 100%,
-    #7db9e8 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006680', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: #006680;
   aside {
     display: grid;
     grid-template-columns: auto 40px;
@@ -129,8 +117,21 @@ body {
 }
 @media screen and (min-width: 800px) {
   body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006680+1,ff00ee+100,7db9e8+100 */
+    background: #006680; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      45deg,
+      #006680 1%,
+      #ff00ee 100%,
+      #7db9e8 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006680', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: 1.37vw;
     height: calc(100% - 5em);
-    font-size: 1.4vw;
     margin: 2.5em;
     display: grid;
     grid-template-columns: 20% auto;
@@ -187,6 +188,7 @@ body {
     main {
       height: auto;
       position: relative;
+      padding: 2em 4em;
       h1 {
         font-size: 1.8em;
         font-weight: bold;
