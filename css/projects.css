@@ -1,3 +1,271 @@
+* {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  height: auto;
+  padding: 0;
+  font-size: 2vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #006680;
+  height: auto;
+}
+body aside {
+  display: grid;
+  grid-template-columns: auto 40px;
+  padding: 1.5em 2em;
+}
+body aside figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+body aside figure .avatar {
+  display: none;
+}
+body aside figure figcaption {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+}
+body aside #navbtn {
+  width: auto;
+  height: auto;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  outline: 0;
+}
+body aside #navbtn img {
+  width: 2.8em;
+}
+body aside nav {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  top: 4.798em;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  transition: 0.4s;
+  z-index: 5;
+}
+body aside nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: white;
+}
+body aside nav ul li {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid lightgrey;
+}
+body aside nav ul li a {
+  text-decoration: none;
+  font-size: 1.4em;
+  padding: 1em;
+  font-weight: 500;
+  display: block;
+  color: black;
+  cursor: pointer;
+}
+body aside nav ul :last-child a {
+  border-bottom: 1px solid lightgrey;
+}
+body main {
+  height: auto;
+  background-color: #fff;
+  padding: 4em 0 2em 0;
+  margin-bottom: 3.5em;
+}
+body main h1 {
+  font-size: 1.8em;
+  padding: 0 1.5em;
+  margin: 0;
+  font-weight: bold;
+  text-align: justify;
+}
+body main p {
+  text-align: right;
+  color: #5b5b5b;
+  padding: 0;
+  margin: 0.5em 2em;
+}
+body main .cont {
+  margin: 3em 0 0 0;
+}
+body main .cont .p-cont {
+  height: 25em;
+  position: relative;
+}
+body main .cont .p-cont .p-look {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5em;
+  color: white;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+body main .cont .p-cont .p-look h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+body main .cont .p-cont .p-look p {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+body main .cont .p-cont .fake-p {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+body main .cont .p-cont .fake-p p {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  margin-top: 2.5em;
+  padding: 1em;
+  border: 3px solid white;
+  border-radius: 5px;
+  display: inline-block;
+}
+body main .cont .p-cont #fake-p1 {
+  background-color: #f16529;
+}
+body main .cont .p-cont #fake-p2 {
+  background-color: #1572b6;
+}
+body main .cont .p-cont #fake-p3 {
+  background-color: #f6c119;
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006680+1,ff00ee+100,7db9e8+100 */
+    background: #006680;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#006680", endColorstr="#7db9e8",GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: 1.37vw;
+    margin: 2.5em;
+    height: calc(100% - 5em);
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+  body aside {
+    padding: 0;
+    display: block;
+    background-color: #dad6ff;
+  }
+  body aside figure {
+    text-align: center;
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 2em 0 2em 0;
+  }
+  body aside figure .avatar {
+    display: block;
+  }
+  body aside figure .avatar img {
+    height: 3.5em;
+  }
+  body aside figure figcaption {
+    color: black;
+    font-size: 1em;
+  }
+  body aside button {
+    display: none;
+  }
+  body aside nav {
+    margin: 0;
+    position: static;
+    width: 100%;
+    height: auto !important;
+    display: block;
+    background-color: #efefef;
+  }
+  body aside nav ul {
+    background-color: inherit;
+  }
+  body aside nav ul li {
+    text-align: left;
+    border: none;
+  }
+  body aside nav ul li a {
+    background-color: inherit;
+    font-size: 0.8em;
+    padding-left: 2em;
+  }
+  body aside nav ul li a:hover {
+    background-color: #1a76ff;
+    color: white;
+    transition: 0.3s;
+  }
+  body main {
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+  }
+  body main h1 {
+    padding: 3em 2em;
+    margin: 0;
+    font-size: 1.6 em;
+  }
+  body main .cont {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    display: grid;
+    font-size: 1vw;
+    grid-template-columns: auto auto auto;
+  }
+  body main .cont .p-cont {
+    display: inline-block;
+  }
+  body main .cont .p-cont .p-look {
+    position: absolute;
+    bottom: -100%;
+    overflow: hidden;
+  }
+  body main .cont .p-cont:hover {
+    cursor: pointer;
+  }
+  body main .cont .p-cont:hover .p-look {
+    bottom: 0;
+    transition: bottom 0.5s;
+    z-index: 5;
+  }
+  body main .cont .p-cont:hover .fake-p {
+    filter: blur(5px);
+    transition: filter 0.5s;
+  }
+}
 
 /*# sourceMappingURL=projects.css.map */
