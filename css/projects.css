@@ -234,16 +234,18 @@ body main .cont .p-cont #fake-p3 {
     position: relative;
   }
   body main h1 {
-    padding: 3em 2em;
+    padding: 2em 2em;
     margin: 0;
     font-size: 1.6 em;
   }
   body main .cont {
     position: absolute;
-    bottom: 0;
+    bottom: 3.9em;
     margin: 0;
     display: grid;
     font-size: 1vw;
+    overflow: hidden;
+    width: 100%;
     grid-template-columns: auto auto auto;
   }
   body main .cont .p-cont {
@@ -253,6 +255,12 @@ body main .cont .p-cont #fake-p3 {
     position: absolute;
     bottom: -100%;
     overflow: hidden;
+  }
+  body main .cont .p-cont .fake-p {
+    padding-top: 5em;
+  }
+  body main .cont .p-cont .fake-p p {
+    padding: 0.6em;
   }
   body main .cont .p-cont:hover {
     cursor: pointer;

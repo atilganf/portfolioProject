@@ -230,16 +230,18 @@ body {
       padding: 0;
       position: relative;
       h1 {
-        padding: 3em 2em;
+        padding: 2em 2em;
         margin: 0;
         font-size: 1.6 em;
       }
       .cont {
         position: absolute;
-        bottom: 0;
+        bottom: 3.9em;
         margin: 0;
         display: grid;
         font-size: 1vw;
+        overflow: hidden;
+        width: 100%;
         grid-template-columns: auto auto auto;
         .p-cont {
           display: inline-block;
@@ -247,6 +249,12 @@ body {
             position: absolute;
             bottom: -100%; 
             overflow: hidden;
+          }
+          .fake-p{
+            padding-top: 5em;
+            p{
+              padding: 0.6em;
+            }
           }
           &:hover{
             cursor: pointer;
