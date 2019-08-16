@@ -6,7 +6,7 @@ html,
 body {
   height: auto;
   padding: 0;
-  font-size: 2vh;
+  font-size: 12px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -170,7 +170,7 @@ body main .cont .p-cont #fake-p3 {
     /* IE6-9 fallback on horizontal gradient */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-size: 1.37vw;
+    font-size: 18px !important;
     margin: 2.5em;
     height: calc(100% - 5em);
     display: grid;
@@ -203,6 +203,7 @@ body main .cont .p-cont #fake-p3 {
   }
   body aside nav {
     margin: 0;
+    margin-top: 3em;
     position: static;
     width: 100%;
     height: auto !important;

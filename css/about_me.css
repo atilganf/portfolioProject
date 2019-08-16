@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
   padding: 0;
-  font-size: 2vh;
+  font-size: 14px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -89,26 +89,29 @@ body main {
 }
 body main h1 {
   padding: 0;
-  margin: 1em 0 1em 0;
+  margin: 2em 0 1em 0;
   font-size: 1.5em;
   font-weight: 600;
+}
+body main #skillsh1 {
+  margin-top: 5em;
 }
 body main p {
   text-align: justify;
   font-size: 1.1em;
-  color: #5B5B5B;
+  color: #5b5b5b;
   margin-bottom: 1.8em;
 }
 body main p a {
   text-decoration: none;
-  color: #1061D9;
+  color: #1061d9;
 }
 body main .sbcont {
   width: 100%;
 }
 body main .sbcont .skillbar {
   height: 100%;
-  background-color: #CFCFCF;
+  background-color: #cfcfcf;
   margin: 0.8em 0;
   text-align: center;
   text-transform: uppercase;
@@ -118,25 +121,31 @@ body main .sbcont .skillbar .skill {
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
-  font-size: 1em;
+  font-size: 0.7em;
   color: white;
+  width: 0;
   transition: width 1s;
 }
 body main .sbcont .skillbar #s-html {
-  width: 0;
-  background-color: #F16529;
+  background-color: #f16529;
 }
 body main .sbcont .skillbar #s-css {
-  width: 0;
-  background-color: #1572B6;
+  background-color: #1572b6;
 }
 body main .sbcont .skillbar #s-js {
-  width: 0;
-  background-color: #F6C119;
+  background-color: #f6c119;
+}
+body main .sbcont .skillbar #s-rc {
+  background-color: #5ED4F4;
+}
+body main .sbcont .skillbar #s-jq {
+  background-color: #0169AF;
+}
+body main .sbcont .skillbar #s-git {
+  background-color: #5AB859;
 }
 body main .sbcont .skillbar #s-bs {
-  width: 0;
-  background-color: #5A294E;
+  background-color: #5a294e;
 }
 
 @media screen and (min-width: 800px) {
@@ -154,7 +163,7 @@ body main .sbcont .skillbar #s-bs {
     /* IE6-9 fallback on horizontal gradient */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-size: 1.37vw;
+    font-size: 18px !important;
     margin: 2.5em;
     height: calc(100% - 5em);
     display: grid;
@@ -187,6 +196,7 @@ body main .sbcont .skillbar #s-bs {
   }
   body aside nav {
     margin: 0;
+    margin-top: 3em;
     position: static;
     width: 100%;
     height: auto !important;
@@ -217,7 +227,10 @@ body main .sbcont .skillbar #s-bs {
     padding: 0.9em 4em;
   }
   body main h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
+    margin: 2em 0 0 0;
+  }
+  body main #skillsh1 {
     margin: 2em 0 0 0;
   }
   body main p {

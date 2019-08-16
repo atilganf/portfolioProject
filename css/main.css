@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
   padding: 0;
-  font-size: 2vh;
+  font-size: 14px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -91,7 +91,15 @@ body main {
 body main h1 {
   padding: 0;
   margin: 1em 0 1em 0;
-  font-size: 2.4em;
+  font-size: 3.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3d3d3d;
+  text-align: center;
+}
+body main h1 span {
+  color: #1a76ff;
 }
 body main p {
   font-size: 1.5em;
@@ -130,7 +138,7 @@ body main img {
     /* IE6-9 fallback on horizontal gradient */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-size: 1.37vw;
+    font-size: 18px !important;
     height: calc(100% - 5em);
     margin: 2.5em;
     display: grid;
@@ -163,6 +171,7 @@ body main img {
   }
   body aside nav {
     margin: 0;
+    margin-top: 3em;
     position: static;
     width: 100%;
     height: auto !important;
@@ -189,12 +198,11 @@ body main img {
   body main {
     height: auto;
     position: relative;
-    padding: 2em 4em;
+    padding: 6em 4em;
   }
   body main h1 {
-    font-size: 1.8em;
     font-weight: bold;
-    margin: 3.7em 0 0 0;
+    text-align: left;
   }
   body main p {
     font-size: 1em;
@@ -212,7 +220,7 @@ body main img {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 33em;
+    width: 28em;
     display: block;
   }
 }

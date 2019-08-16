@@ -5,7 +5,7 @@ html,
 body {
   height: 100%;
   padding: 0;
-  font-size: 2vh;
+  font-size: 12px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -131,7 +131,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006680', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-size: 1.37vw;
+    font-size: 18px !important;
     margin: 2.5em;
     height: calc(100% - 5em);
     display: grid;
@@ -162,6 +162,7 @@ body {
       }
       nav {
         margin: 0;
+        margin-top: 3em;
         position: static;
         width: 100%;
         height: auto !important;
@@ -195,6 +196,7 @@ body {
       position: relative;
       h1 {
         font-size: 1.7em;
+        margin-top: 1.3em;
         margin-bottom: 1em;
       }
       p{
