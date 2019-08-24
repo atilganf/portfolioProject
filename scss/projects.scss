@@ -5,7 +5,7 @@ html,
 body {
   height: auto;
   padding: 0;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -52,17 +52,17 @@ body {
       padding: 0;
       margin: 0;
       width: 100%;
-      transition: 0.4s;
+      transition: height 0.4s;
       z-index: 5;
       ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
-        background-color: white;
+        background-color: #f2fcff;
         li {
           width: 100%;
           text-align: center;
-          border-top: 1px solid lightgrey;
+          border-top: 1px solid #d5e0e3;
           a {
             text-decoration: none;
             font-size: 1.4em;
@@ -75,13 +75,16 @@ body {
         }
         :last-child {
           a {
-            border-bottom: 1px solid lightgrey;
+            border-bottom: 1px solid #d5e0e3;
           }
         }
       }
     }
   }
   main {
+    position: relative;
+    top: 0;
+    transition: top 0.4s;
     height: auto;
     background-color: #fff;
     padding: 4em 0 2em 0;
@@ -205,12 +208,14 @@ body {
         height: auto !important;
         display: block;
         background-color: #efefef;
+        transition: none !important;
         ul {
           background-color: inherit;
           li {
             text-align: left;
             border: none;
             a {
+              border: none;
               background-color: inherit;
               font-size: 0.8em;
               padding-left: 2em;
@@ -225,11 +230,13 @@ body {
       }
     }
     main {
+      position: relative;
+      top: 0 !important;
+      transition: none !important;
       height: auto;
       margin: 0;
       overflow: hidden;
       padding: 0;
-      position: relative;
       h1 {
         padding: 2em 2em;
         margin: 0;
@@ -246,25 +253,25 @@ body {
         grid-template-columns: auto auto auto;
         .p-cont {
           display: inline-block;
-          .p-look{
+          .p-look {
             position: absolute;
-            bottom: -100%; 
+            bottom: -100%;
             overflow: hidden;
           }
-          .fake-p{
+          .fake-p {
             padding-top: 5em;
-            p{
+            p {
               padding: 0.6em;
             }
           }
-          &:hover{
+          &:hover {
             cursor: pointer;
-            .p-look{
+            .p-look {
               bottom: 0;
               transition: bottom 0.5s;
-              z-index: 5;  
-            }          
-            .fake-p{
+              z-index: 5;
+            }
+            .fake-p {
               filter: blur(5px);
               transition: filter 0.5s;
             }

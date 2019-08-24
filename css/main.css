@@ -55,19 +55,19 @@ body aside nav {
   padding: 0;
   margin: 0;
   width: 100%;
-  transition: 0.4s;
+  transition: height 0.4s;
   z-index: 5;
 }
 body aside nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  background-color: white;
+  background-color: #f2fcff;
 }
 body aside nav ul li {
   width: 100%;
   text-align: center;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #d5e0e3;
 }
 body aside nav ul li a {
   text-decoration: none;
@@ -79,9 +79,12 @@ body aside nav ul li a {
   cursor: pointer;
 }
 body aside nav ul :last-child a {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #d5e0e3;
 }
 body main {
+  position: relative;
+  top: 0;
+  transition: top 0.4s;
   width: 100%;
   height: 85%;
   background-color: #fff;
@@ -177,6 +180,7 @@ body main img {
     height: auto !important;
     display: block;
     background-color: #efefef;
+    transition: none !important;
   }
   body aside nav ul {
     background-color: inherit;
@@ -186,6 +190,7 @@ body main img {
     border: none;
   }
   body aside nav ul li a {
+    border: none;
     background-color: inherit;
     font-size: 0.8em;
     padding-left: 2em;
@@ -196,6 +201,9 @@ body main img {
     transition: 0.3s;
   }
   body main {
+    position: relative;
+    top: 0 !important;
+    transition: none !important;
     height: auto;
     position: relative;
     padding: 6em 4em;

@@ -1,13 +1,16 @@
 function displaynav() {
-   var menu = document.querySelector("nav");
-   if (menu.style.height == "0px") {
-      menu.style.height = "18.31em";
+   var nav = document.querySelector("nav");
+   var main = document.querySelector("main");
+   if (nav.style.height == "0px") {
+      nav.style.height = "18.5em";
+      main.style.top = "18.3em"
    } else {
-      menu.style.height = "0px";
+      nav.style.height = "0px";
+      main.style.top = "0px"
    }
 }
 function animateBars() {
-   let widths = [80, 80, 70, 60, 60, 60, 40];
+   let widths = [80, 80, 70, 60, 60, 60, 50, 40];
    var skills = document.getElementsByClassName("skill");
    for (let i = 0; i < skills.length; i++) {
       skills[i].style.width = widths[i] + "%";

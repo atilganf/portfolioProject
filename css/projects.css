@@ -6,7 +6,7 @@ html,
 body {
   height: auto;
   padding: 0;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -56,19 +56,19 @@ body aside nav {
   padding: 0;
   margin: 0;
   width: 100%;
-  transition: 0.4s;
+  transition: height 0.4s;
   z-index: 5;
 }
 body aside nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  background-color: white;
+  background-color: #f2fcff;
 }
 body aside nav ul li {
   width: 100%;
   text-align: center;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #d5e0e3;
 }
 body aside nav ul li a {
   text-decoration: none;
@@ -80,9 +80,12 @@ body aside nav ul li a {
   cursor: pointer;
 }
 body aside nav ul :last-child a {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #d5e0e3;
 }
 body main {
+  position: relative;
+  top: 0;
+  transition: top 0.4s;
   height: auto;
   background-color: #fff;
   padding: 4em 0 2em 0;
@@ -209,6 +212,7 @@ body main .cont .p-cont #fake-p3 {
     height: auto !important;
     display: block;
     background-color: #efefef;
+    transition: none !important;
   }
   body aside nav ul {
     background-color: inherit;
@@ -218,6 +222,7 @@ body main .cont .p-cont #fake-p3 {
     border: none;
   }
   body aside nav ul li a {
+    border: none;
     background-color: inherit;
     font-size: 0.8em;
     padding-left: 2em;
@@ -228,11 +233,13 @@ body main .cont .p-cont #fake-p3 {
     transition: 0.3s;
   }
   body main {
+    position: relative;
+    top: 0 !important;
+    transition: none !important;
     height: auto;
     margin: 0;
     overflow: hidden;
     padding: 0;
-    position: relative;
   }
   body main h1 {
     padding: 2em 2em;

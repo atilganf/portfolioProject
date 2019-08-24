@@ -51,17 +51,17 @@ body {
       padding: 0;
       margin: 0;
       width: 100%;
-      transition: 0.4s;
+      transition: height 0.4s;
       z-index: 5;
       ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
-        background-color: white;
+        background-color: #f2fcff;
         li {
           width: 100%;
           text-align: center;
-          border-top: 1px solid lightgrey;
+          border-top: 1px solid #d5e0e3;
           a {
             text-decoration: none;
             font-size: 1.4em;
@@ -74,13 +74,16 @@ body {
         }
         :last-child {
           a {
-            border-bottom: 1px solid lightgrey;
+            border-bottom: 1px solid #d5e0e3;
           }
         }
       }
     }
   }
   main {
+    position: relative;
+    top: 0;
+    transition: top 0.4s;
     width: 100%;
     height: 85%;
     background-color: #fff;
@@ -95,8 +98,8 @@ body {
       letter-spacing: 2px;
       color: #3d3d3d;
       text-align: center;
-      span{
-         color: #1a76ff;
+      span {
+        color: #1a76ff;
       }
     }
     p {
@@ -174,12 +177,14 @@ body {
         height: auto !important;
         display: block;
         background-color: #efefef;
+        transition: none !important;
         ul {
           background-color: inherit;
           li {
             text-align: left;
             border: none;
             a {
+              border: none;
               background-color: inherit;
               font-size: 0.8em;
               padding-left: 2em;
@@ -194,6 +199,9 @@ body {
       }
     }
     main {
+      position: relative;
+      top: 0 !important;
+      transition: none !important;
       height: auto;
       position: relative;
       padding: 6em 4em;

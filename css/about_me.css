@@ -55,19 +55,19 @@ body aside nav {
   padding: 0;
   margin: 0;
   width: 100%;
-  transition: 0.4s;
+  transition: height 0.4s;
   z-index: 5;
 }
 body aside nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  background-color: white;
+  background-color: #f2fcff;
 }
 body aside nav ul li {
   width: 100%;
   text-align: center;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #d5e0e3;
 }
 body aside nav ul li a {
   text-decoration: none;
@@ -79,9 +79,12 @@ body aside nav ul li a {
   cursor: pointer;
 }
 body aside nav ul :last-child a {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #d5e0e3;
 }
 body main {
+  position: relative;
+  transition: top 0.4s;
+  top: 0;
   background-color: #fff;
   height: 85%;
   padding: 2em;
@@ -124,6 +127,7 @@ body main .sbcont .skillbar .skill {
   font-size: 0.7em;
   color: white;
   width: 0;
+  border-radius: 5px;
   transition: width 1s;
 }
 body main .sbcont .skillbar #s-html {
@@ -136,13 +140,16 @@ body main .sbcont .skillbar #s-js {
   background-color: #f6c119;
 }
 body main .sbcont .skillbar #s-rc {
-  background-color: #5ED4F4;
+  background-color: #5ed4f4;
 }
 body main .sbcont .skillbar #s-jq {
-  background-color: #0169AF;
+  background-color: #0169af;
 }
 body main .sbcont .skillbar #s-git {
-  background-color: #5AB859;
+  background-color: #5ab859;
+}
+body main .sbcont .skillbar #s-jsaj {
+  background-color: #1D7874;
 }
 body main .sbcont .skillbar #s-bs {
   background-color: #5a294e;
@@ -202,6 +209,7 @@ body main .sbcont .skillbar #s-bs {
     height: auto !important;
     display: block;
     background-color: #efefef;
+    transition: none !important;
   }
   body aside nav ul {
     background-color: inherit;
@@ -211,6 +219,7 @@ body main .sbcont .skillbar #s-bs {
     border: none;
   }
   body aside nav ul li a {
+    border: none;
     background-color: inherit;
     font-size: 0.8em;
     padding-left: 2em;
@@ -221,6 +230,9 @@ body main .sbcont .skillbar #s-bs {
     transition: 0.3s;
   }
   body main {
+    position: relative;
+    top: 0 !important;
+    transition: none !important;
     overflow: hidden;
     height: auto;
     text-align: left;
@@ -239,6 +251,7 @@ body main .sbcont .skillbar #s-bs {
   }
   body main .sbcont .skillbar .skill {
     margin: 0;
+    border-radius: 0 5px 5px 0;
     text-align: right;
     padding-right: 1em;
   }

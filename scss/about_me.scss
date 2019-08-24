@@ -52,17 +52,17 @@ body {
       padding: 0;
       margin: 0;
       width: 100%;
-      transition: 0.4s;
+      transition: height 0.4s;
       z-index: 5;
       ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
-        background-color: white;
+        background-color: #f2fcff;
         li {
           width: 100%;
           text-align: center;
-          border-top: 1px solid lightgrey;
+          border-top: 1px solid #d5e0e3;
           a {
             text-decoration: none;
             font-size: 1.4em;
@@ -75,13 +75,16 @@ body {
         }
         :last-child {
           a {
-            border-bottom: 1px solid lightgrey;
+            border-bottom: 1px solid #d5e0e3;
           }
         }
       }
     }
   }
   main {
+    position: relative;
+    transition: top 0.4s;
+    top: 0;
     background-color: #fff;
     height: 85%;
     padding: 2em;
@@ -92,8 +95,8 @@ body {
       font-size: 1.5em;
       font-weight: 600;
     }
-    #skillsh1{
-       margin-top: 5em;
+    #skillsh1 {
+      margin-top: 5em;
     }
     p {
       text-align: justify;
@@ -121,6 +124,7 @@ body {
           font-size: 0.7em;
           color: white;
           width: 0;
+          border-radius: 5px;
           transition: width 1s;
         }
         #s-html {
@@ -132,14 +136,17 @@ body {
         #s-js {
           background-color: #f6c119;
         }
-        #s-rc{
-           background-color: #5ED4F4;
+        #s-rc {
+          background-color: #5ed4f4;
         }
-        #s-jq{
-           background-color: #0169AF;
+        #s-jq {
+          background-color: #0169af;
         }
-        #s-git{
-           background-color: #5AB859;
+        #s-git {
+          background-color: #5ab859;
+        }
+        #s-jsaj{
+           background-color: #1D7874;
         }
         #s-bs {
           background-color: #5a294e;
@@ -201,12 +208,14 @@ body {
         height: auto !important;
         display: block;
         background-color: #efefef;
+        transition: none !important;
         ul {
           background-color: inherit;
           li {
             text-align: left;
             border: none;
             a {
+              border: none;
               background-color: inherit;
               font-size: 0.8em;
               padding-left: 2em;
@@ -221,6 +230,9 @@ body {
       }
     }
     main {
+      position: relative;
+      top: 0 !important;
+      transition: none !important;
       overflow: hidden;
       height: auto;
       text-align: left;
@@ -229,8 +241,8 @@ body {
         font-size: 1.6em;
         margin: 2em 0 0 0;
       }
-      #skillsh1{
-         margin: 2em 0 0 0;
+      #skillsh1 {
+        margin: 2em 0 0 0;
       }
       p {
         font-size: 0.9em;
@@ -240,6 +252,7 @@ body {
         .skillbar {
           .skill {
             margin: 0;
+            border-radius: 0 5px 5px 0;
             text-align: right;
             padding-right: 1em;
           }

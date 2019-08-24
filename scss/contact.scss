@@ -5,7 +5,7 @@ html,
 body {
   height: 100%;
   padding: 0;
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -51,17 +51,17 @@ body {
       padding: 0;
       margin: 0;
       width: 100%;
-      transition: 0.4s;
+      transition: height 0.4s;
       z-index: 5;
       ul {
         padding: 0;
         margin: 0;
         list-style-type: none;
-        background-color: white;
+        background-color: #f2fcff;
         li {
           width: 100%;
           text-align: center;
-          border-top: 1px solid lightgrey;
+          border-top: 1px solid #d5e0e3;
           a {
             text-decoration: none;
             font-size: 1.4em;
@@ -74,13 +74,16 @@ body {
         }
         :last-child {
           a {
-            border-bottom: 1px solid lightgrey;
+            border-bottom: 1px solid #d5e0e3;
           }
         }
       }
     }
   }
   main {
+    position: relative;
+    top: 0;
+    transition: top 0.4s;
     width: 100%;
     height: 85%;
     background-color: #fff;
@@ -93,18 +96,18 @@ body {
       font-weight: normal;
       margin-bottom: 2em;
     }
-    p{
+    p {
       font-size: 1.5em;
       text-align: left;
-      color: #5B5B5B;
-      a{
+      color: #5b5b5b;
+      a {
         color: #006680;
       }
-      .number{
+      .number {
         display: block;
       }
     }
-    img{
+    img {
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -168,12 +171,14 @@ body {
         height: auto !important;
         display: block;
         background-color: #efefef;
+        transition: none !important;
         ul {
           background-color: inherit;
           li {
             text-align: left;
             border: none;
             a {
+              border: none;
               background-color: inherit;
               font-size: 0.8em;
               padding-left: 2em;
@@ -188,6 +193,9 @@ body {
       }
     }
     main {
+      position: relative;
+      top: 0 !important;
+      transition: none !important;
       margin: 0;
       padding: 7.5em 4em;
       height: auto;
@@ -199,20 +207,20 @@ body {
         margin-top: 1.3em;
         margin-bottom: 1em;
       }
-      p{
-        color:#5B5B5B;
+      p {
+        color: #5b5b5b;
         font-size: 1em;
         z-index: 5;
         width: 20em;
-        .number{
+        .number {
           display: inline;
         }
-        a{
+        a {
           display: inline-block;
           z-index: 5;
         }
       }
-      img{
+      img {
         z-index: 1 !important;
       }
     }
