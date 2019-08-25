@@ -88,70 +88,47 @@ body main {
   transition: top 0.4s;
   height: auto;
   background-color: #fff;
-  padding: 4em 0 2em 0;
+  padding: 1px 2em;
   margin-bottom: 3.5em;
 }
-body main h1 {
-  font-size: 1.8em;
-  padding: 0 1.5em;
-  margin: 0;
-  font-weight: bold;
-  text-align: justify;
+body main .prjct {
+  margin: 3em 0;
 }
-body main p {
-  text-align: right;
-  color: #5b5b5b;
-  padding: 0;
-  margin: 0.5em 2em;
-}
-body main .cont {
-  margin: 3em 0 0 0;
-}
-body main .cont .p-cont {
-  height: 25em;
-  position: relative;
-}
-body main .cont .p-cont .p-look {
-  position: absolute;
-  bottom: 0;
-  padding: 1.5em;
-  color: white;
-  background-color: rgba(200, 200, 200, 0.5);
-}
-body main .cont .p-cont .p-look h3 {
-  text-align: center;
-  margin: 0;
-  padding: 0 0 1em 0;
-}
-body main .cont .p-cont .p-look p {
-  color: white;
-  margin: 0;
-  padding: 0;
-  text-align: justify;
-}
-body main .cont .p-cont .fake-p {
-  height: 100%;
+body main .prjct img {
   width: 100%;
-  text-align: center;
 }
-body main .cont .p-cont .fake-p p {
+body main .prjct .prj-txt h2 {
   text-align: center;
-  font-size: 2em;
+  margin-top: 1em;
+  font-size: 1.7em;
+}
+body main .prjct .prj-txt p {
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  text-align: justify;
+}
+body main .prjct .visit_site {
+  text-decoration: none;
   color: white;
-  margin-top: 2.5em;
-  padding: 1em;
-  border: 3px solid white;
-  border-radius: 5px;
-  display: inline-block;
-}
-body main .cont .p-cont #fake-p1 {
-  background-color: #f16529;
-}
-body main .cont .p-cont #fake-p2 {
-  background-color: #1572b6;
-}
-body main .cont .p-cont #fake-p3 {
-  background-color: #f6c119;
+  box-shadow: 5px 5px 3px grey;
+  font-size: 1.3em;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 0 10px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3126ad+1,ed2f5b+100 */
+  background: #3126ad;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #3126ad 1%, #ed2f5b 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #3126ad 1%, #ed2f5b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #3126ad 1%, #ed2f5b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#3126ad", endColorstr="#ed2f5b",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
 }
 
 @media screen and (min-width: 800px) {
@@ -240,47 +217,6 @@ body main .cont .p-cont #fake-p3 {
     margin: 0;
     overflow: hidden;
     padding: 0;
-  }
-  body main h1 {
-    padding: 2em 2em;
-    margin: 0;
-    font-size: 1.6 em;
-  }
-  body main .cont {
-    position: absolute;
-    bottom: 3.9em;
-    margin: 0;
-    display: grid;
-    font-size: 1vw;
-    overflow: hidden;
-    width: 100%;
-    grid-template-columns: auto auto auto;
-  }
-  body main .cont .p-cont {
-    display: inline-block;
-  }
-  body main .cont .p-cont .p-look {
-    position: absolute;
-    bottom: -100%;
-    overflow: hidden;
-  }
-  body main .cont .p-cont .fake-p {
-    padding-top: 5em;
-  }
-  body main .cont .p-cont .fake-p p {
-    padding: 0.6em;
-  }
-  body main .cont .p-cont:hover {
-    cursor: pointer;
-  }
-  body main .cont .p-cont:hover .p-look {
-    bottom: 0;
-    transition: bottom 0.5s;
-    z-index: 5;
-  }
-  body main .cont .p-cont:hover .fake-p {
-    filter: blur(5px);
-    transition: filter 0.5s;
   }
 }
 
