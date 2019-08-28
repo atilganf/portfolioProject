@@ -131,12 +131,11 @@ body main .prjct .visit_site {
   /* IE6-9 fallback on horizontal gradient */
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 700px) {
   html {
     height: 100%;
   }
-
-  body {
+  html body {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006680+1,ff00ee+100,7db9e8+100 */
     background: #006680;
     /* Old browsers */
@@ -150,38 +149,38 @@ body main .prjct .visit_site {
     /* IE6-9 fallback on horizontal gradient */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-size: 18px !important;
+    font-size: 18px;
     margin: 2.5em;
     height: calc(100% - 5em);
     display: grid;
     grid-template-columns: 20% auto;
   }
-  body aside {
+  html body aside {
     padding: 0;
     display: block;
     background-color: #dad6ff;
   }
-  body aside figure {
+  html body aside figure {
     text-align: center;
     display: block;
     height: auto;
     width: auto;
     margin: 2em 0 2em 0;
   }
-  body aside figure .avatar {
+  html body aside figure .avatar {
     display: block;
   }
-  body aside figure .avatar img {
+  html body aside figure .avatar img {
     height: 3.5em;
   }
-  body aside figure figcaption {
+  html body aside figure figcaption {
     color: black;
     font-size: 1em;
   }
-  body aside button {
+  html body aside button {
     display: none;
   }
-  body aside nav {
+  html body aside nav {
     margin: 0;
     margin-top: 3em;
     position: static;
@@ -191,32 +190,64 @@ body main .prjct .visit_site {
     background-color: #efefef;
     transition: none !important;
   }
-  body aside nav ul {
+  html body aside nav ul {
     background-color: inherit;
   }
-  body aside nav ul li {
+  html body aside nav ul li {
     text-align: left;
     border: none;
   }
-  body aside nav ul li a {
+  html body aside nav ul li a {
     border: none;
     background-color: inherit;
     font-size: 0.8em;
     padding-left: 2em;
   }
-  body aside nav ul li a:hover {
+  html body aside nav ul li a:hover {
     background-color: #1a76ff;
     color: white;
     transition: 0.3s;
   }
-  body main {
+  html body main {
     position: relative;
+    width: 100%;
     top: 0 !important;
-    transition: none !important;
+    transition: none;
     height: auto;
     margin: 0;
     overflow: hidden;
-    padding: 0;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  html body main hr {
+    margin: 10px;
+    width: 0;
+    display: none;
+  }
+  html body main .prjct {
+    position: relative;
+    display: block;
+    height: 430px;
+    margin: auto 0;
+    padding: 1em;
+    border-right: 1px solid #aaa;
+  }
+  html body main .prjct:last-child {
+    border: none;
+  }
+  html body main .prjct .prj-txt h2 {
+    margin-top: 0.8em;
+    font-size: 1.2em;
+  }
+  html body main .prjct .prj-txt p {
+    font-size: 0.7em;
+    line-height: 1.5em;
+  }
+  html body main .prjct .visit_site {
+    position: absolute;
+    bottom: 15px;
+    width: calc(100% - 2em);
   }
 }
 

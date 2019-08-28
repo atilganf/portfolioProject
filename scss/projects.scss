@@ -131,90 +131,128 @@ body {
     }
   }
 }
-@media screen and (min-width: 800px) {
+@media (min-width: 700px) {
   html {
     height: 100%;
-  }
-  body {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006680+1,ff00ee+100,7db9e8+100 */
-    background: #006680; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(
-      45deg,
-      #006680 1%,
-      #ff00ee 100%,
-      #7db9e8 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006680', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    font-size: 18px !important;
-    margin: 2.5em;
-    height: calc(100% - 5em);
-    display: grid;
-    grid-template-columns: 20% auto;
-    aside {
-      padding: 0;
-      display: block;
-      background-color: #dad6ff;
-      figure {
-        text-align: center;
+
+    body {
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006680+1,ff00ee+100,7db9e8+100 */
+      background: #006680; /* Old browsers */
+      background: -moz-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(45deg, #006680 1%, #ff00ee 100%, #7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(
+        45deg,
+        #006680 1%,
+        #ff00ee 100%,
+        #7db9e8 100%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006680', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-size: 18px;
+      margin: 2.5em;
+      height: calc(100% - 5em);
+      display: grid;
+      grid-template-columns: 20% auto;
+      aside {
+        padding: 0;
         display: block;
-        height: auto;
-        width: auto;
-        margin: 2em 0 2em 0;
-        .avatar {
+        background-color: #dad6ff;
+        figure {
+          text-align: center;
           display: block;
-          img {
-            height: 3.5em;
+          height: auto;
+          width: auto;
+          margin: 2em 0 2em 0;
+          .avatar {
+            display: block;
+            img {
+              height: 3.5em;
+            }
+          }
+          figcaption {
+            color: black;
+            font-size: 1em;
           }
         }
-        figcaption {
-          color: black;
-          font-size: 1em;
+        button {
+          display: none;
         }
-      }
-      button {
-        display: none;
-      }
-      nav {
-        margin: 0;
-        margin-top: 3em;
-        position: static;
-        width: 100%;
-        height: auto !important;
-        display: block;
-        background-color: #efefef;
-        transition: none !important;
-        ul {
-          background-color: inherit;
-          li {
-            text-align: left;
-            border: none;
-            a {
+        nav {
+          margin: 0;
+          margin-top: 3em;
+          position: static;
+          width: 100%;
+          height: auto !important;
+          display: block;
+          background-color: #efefef;
+          transition: none !important;
+          ul {
+            background-color: inherit;
+            li {
+              text-align: left;
               border: none;
-              background-color: inherit;
-              font-size: 0.8em;
-              padding-left: 2em;
-              &:hover {
-                background-color: #1a76ff;
-                color: white;
-                transition: 0.3s;
+              a {
+                border: none;
+                background-color: inherit;
+                font-size: 0.8em;
+                padding-left: 2em;
+                &:hover {
+                  background-color: #1a76ff;
+                  color: white;
+                  transition: 0.3s;
+                }
               }
             }
           }
         }
       }
-    }
-    main {
-      position: relative;
-      top: 0 !important;
-      transition: none !important;
-      height: auto;
-      margin: 0;
-      overflow: hidden;
-      padding: 0;
+      main {
+        position: relative;
+        width: 100%;
+        top: 0 !important;
+        transition: none;
+        height: auto;
+        margin: 0;
+        overflow: hidden;
+        padding: 2em;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        hr {
+          margin: 10px;
+          width: 0;
+          display: none;
+        }
+        .prjct {
+          position: relative;
+          display: block;
+          height: 430px;
+          margin: auto 0;
+          padding: 1em;
+          border-right: 1px solid #aaa;
+          &:last-child {
+            border: none;
+            
+          }
+          img {
+          }
+          .prj-txt {
+            h2 {
+              margin-top: 0.8em;
+              font-size: 1.2em;
+            }
+            p {
+              font-size: 0.7em;
+              line-height: 1.5em;
+            }
+          }
+          .visit_site {
+            position: absolute;
+            bottom: 15px;
+            width: calc(100% - 2em);
+          }
+        }
+      }
     }
   }
 }
