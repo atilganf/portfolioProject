@@ -4,9 +4,10 @@
 
 html,
 body {
-  height: 100%;
   padding: 0;
   font-size: 14px;
+  min-height: 100%;
+  height: auto;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -149,13 +150,20 @@ body main .sbcont .skillbar #s-git {
   background-color: #5ab859;
 }
 body main .sbcont .skillbar #s-jsaj {
-  background-color: #1D7874;
+  background-color: #1d7874;
 }
 body main .sbcont .skillbar #s-bs {
   background-color: #5a294e;
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
+  html {
+    font-size: 18px;
+    min-height: auto;
+    padding: 2.5em;
+    height: 100%;
+  }
+
   body {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006680+1,ff00ee+100,7db9e8+100 */
     background: #006680;
@@ -170,8 +178,7 @@ body main .sbcont .skillbar #s-bs {
     /* IE6-9 fallback on horizontal gradient */
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-size: 18px !important;
-    margin: 2.5em;
+    font-size: 18px;
     height: calc(100% - 5em);
     display: grid;
     grid-template-columns: 20% auto;

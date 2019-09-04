@@ -10,7 +10,7 @@ function displaynav() {
    }
 }
 function animateBars() {
-   let widths = [80, 80, 70, 60, 60, 60, 50, 40];
+   let widths = [90, 90, 70, 60, 60, 50, 40, 40];
    var skills = document.getElementsByClassName("skill");
    for (let i = 0; i < skills.length; i++) {
       skills[i].style.width = widths[i] + "%";
